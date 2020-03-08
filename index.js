@@ -53,6 +53,6 @@ http.createServer((request, response) => {
         // responseBody 전송
         response.end(data);
     });
-}).listen(3000);
+}).listen(port);
 
 console.log('Server running at http://127.0.0.1:3000/');
