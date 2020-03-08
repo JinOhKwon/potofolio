@@ -2,7 +2,7 @@
 <!-- [if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><! -->
-<html class="no-js" lang="en">
+<html class="no-js" lang="ko">
 <!--<![endif]-->
 
 <head>
@@ -10,7 +10,7 @@
     <!--- 메타 정보
     ================================================== -->
     <meta charset="utf-8">
-    <title>SH 개발이야기</title>
+    <title>JO의 개발</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +25,7 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -39,7 +40,7 @@
     <header class="s-header">
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <h1 style="color:white">SH</h1>
+                <h1 style="color:white">JO</h1>
             </a>
             <!-- <a class="site-logo" href="index.html"><img src="images/logo.png" alt="Homepage"></a> -->
         </div>
@@ -60,8 +61,8 @@
 
     <!-- 홈
    ================================================== -->
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg"
-        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll"
+        data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
@@ -71,7 +72,7 @@
             <div class="row home-content__main">
                 <h3>HELLO</h3>
                 <h1>
-                    I am SeongHyun Kim. <br>
+                    I am JinOh Kwon. <br>
                     I am a Web Developer <br>
                 </h1>
                 <div class="home-content__buttons">
@@ -93,7 +94,8 @@
         <!-- 홈 소셜 -->
         <ul class="home-social">
             <li>
-                <a href="https://github.com/esmoney"><i class="im im-github" aria-hidden="true"></i><span>GitHub</span></a>
+                <a href="https://github.com/JinOhKwon"><i class="im im-github"
+                        aria-hidden="true"></i><span>GitHub</span></a>
             </li>
         </ul> <!-- / 홈 소셜 -->
 
@@ -115,7 +117,7 @@
         <div class="row about-content">
             <div class="col-six tab-full left">
                 <div style="text-align: center;">
-                    <img src="images/sh1.jpg" alt="Author image" class="myself-img-container">
+                    <img src="images/jo.jpeg" alt="jo image" class="myself-img-container">
                 </div>
                 <p style="font-weight: bolder;text-align: center;font-size: 3rem;">Who's this guy?</p>
 
@@ -126,7 +128,7 @@
                 <p>
                     저는 새로운 환경을 두려워하지 않고 신기술에 흥미가 많으며 소스코드 하나하나에 많은
                     고민을 가지고 사용자에게 서비스를 제공 합니다. <br />
-                    좋은 동료들과 서로의 코드를 공유하며 영양가 있는 코드리뷰 시간을 갖고 싶습니다.
+                    좋은 사람들과 협업하여 코드리뷰 시간을 갖고 싶습니다.
                 </p>
             </div>
 
@@ -166,7 +168,7 @@
                     </li>
                     <li>
                         <div class="progress percent60"><span style="top: -6rem;">60%</span></div>
-                        <strong>RxJS, Spring Boot, JPA, WAS ETC...</strong>
+                        <strong>React, Spring Boot, JPA, WAS ETC...</strong>
                     </li>
                 </ul>
             </div>
@@ -184,27 +186,25 @@
                     <div class="timeline__block">
                         <div class="timeline__bullet"></div>
                         <div class="timeline__header">
-                            <p class="timeline__timeframe">2018/08 - 2019/01</p>
-                            <h3>전자서식관리 솔루션 고도화</h3>
+                            <p class="timeline__timeframe">2019/11 - 2020/2</p>
+                            <h3>국민은행 해지문서 분류시스템 구축</h3>
                             <h5>full-stack developer</h5>
                         </div>
                         <div class="timeline__desc">
                             <p>
                                 <ul>
-                                    <li>Angular4 to Angular7</li>
-                                    <li>Material to Bootstrap 마이그레이션</li>
                                     <li>비동기로직 개선</li>
                                     <li>사용자 편의기능 추가 구현</li>
                                 </ul>
                             </p>
                         </div>
                     </div>
-
+                    
                     <div class="timeline__block">
                         <div class="timeline__bullet"></div>
                         <div class="timeline__header">
-                            <p class="timeline__timeframe">2018/04 - 2018/07</p>
-                            <h3>해지문서분류 솔루션 고도화</h3>
+                            <p class="timeline__timeframe">2018/07 - 2019/3</p>
+                            <h3>하나은행 WIN10 대응 개발</h3>
                             <h5>full-stack developer</h5>
                         </div>
                         <div class="timeline__desc">
@@ -218,6 +218,21 @@
                         </div>
                     </div>
 
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">2017/10 - 2018/3</p>
+                            <h3>국민은행 디지털서식 관리 구축</h3>
+                            <h5>front/back-end developer</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>
+                                <li>서버/클라이언트 개발</li>
+                                <li>안정화 작업</li>
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -227,17 +242,16 @@
                     <div class="timeline__block">
                         <div class="timeline__bullet"></div>
                         <div class="timeline__header">
-                            <p class="timeline__timeframe">2017/04 - 2018/03</p>
-                            <h3>전자서식관리 솔루션</h3>
+                            <p class="timeline__timeframe">2019/03 - 2019/10</p>
+                            <h3>우리은행 해지문서 분류시스템 구축</h3>
                             <h5>full-stack developer</h5>
                         </div>
                         <div class="timeline__desc">
                             <p>
                                 <ul>
-                                    <li>DB설계 참여</li>
-                                    <li>서버/클라이언트 개발</li>
-                                    <li>고객사 설치</li>
-                                    <li>안정화 작업</li>
+                                    <li>AngularJS 에서 Angular7 버전 마이그레이션</li>
+                                    <li>비동기로직 개선</li>
+                                    <li>사용자 편의기능 추가 구현</li>
                                 </ul>
                             </p>
                         </div>
@@ -246,15 +260,16 @@
                     <div class="timeline__block">
                         <div class="timeline__bullet"></div>
                         <div class="timeline__header">
-                            <p class="timeline__timeframe">2016/02 - 2017/03</p>
-                            <h3>해지문서분류 솔루션</h3>
-                            <h5>front/back-end developer</h5>
+                            <p class="timeline__timeframe">2018/04 - 2018/06</p>
+                            <h3>신한은행 OCR 센터 사스템 재구축</h3>
+                            <h5>full-stack developer</h5>
                         </div>
                         <div class="timeline__desc">
                             <p>
-                                <li>서버/클라이언트 개발</li>
-                                <li>고객사 설치</li>
-                                <li>안정화 작업</li>
+                                <ul>
+                                    <li>서버/클라이언트 개발</li>
+                                    <li>쿼리 작업</li>
+                                </ul>
                             </p>
                         </div>
                     </div>
@@ -289,8 +304,8 @@
                         <div class="item-folio__thumb">
                             <a href="images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car"
                                 data-size="1050x700">
-                                <img src="images/portfolio/beetle.jpg" srcset="images/portfolio/beetle.jpg 1x, images/portfolio/beetle@2x.jpg 2x"
-                                    alt="">
+                                <img src="images/portfolio/beetle.jpg"
+                                    srcset="images/portfolio/beetle.jpg 1x, images/portfolio/beetle@2x.jpg 2x" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -314,7 +329,7 @@
                         </div>
 
                     </div>
-                </div> 
+                </div>
 
                 <div class="masonry__brick">
                     <div class="item-folio">
@@ -322,7 +337,8 @@
                         <div class="item-folio__thumb">
                             <a href="images/portfolio/gallery/g-lighthouse.jpg" class="thumb-link" title="Lighthouse"
                                 data-size="1050x700">
-                                <img src="images/portfolio/lighthouse.jpg" srcset="images/portfolio/lighthouse.jpg 1x, images/portfolio/lighthouse@2x.jpg 2x"
+                                <img src="images/portfolio/lighthouse.jpg"
+                                    srcset="images/portfolio/lighthouse.jpg 1x, images/portfolio/lighthouse@2x.jpg 2x"
                                     alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
@@ -347,15 +363,15 @@
                         </div>
 
                     </div>
-                </div> 
+                </div>
 
                 <div class="masonry__brick">
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
                             <a href="images/portfolio/gallery/g-salad.jpg" class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/salad.jpg" srcset="images/portfolio/salad.jpg 1x, images/portfolio/salad@2x.jpg 2x"
-                                    alt="">
+                                <img src="images/portfolio/salad.jpg"
+                                    srcset="images/portfolio/salad.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -379,14 +395,15 @@
                         </span>
 
                     </div>
-                </div> 
+                </div>
 
                 <div class="masonry__brick">
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
                             <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/woodcraft.jpg" srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x"
+                                <img src="images/portfolio/woodcraft.jpg"
+                                    srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x"
                                     alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
@@ -418,7 +435,8 @@
 
                         <div class="item-folio__thumb">
                             <a href="images/portfolio/gallery/g-skaterboy.jpg" class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/skaterboy.jpg" srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x"
+                                <img src="images/portfolio/skaterboy.jpg"
+                                    srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x"
                                     alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
@@ -450,8 +468,8 @@
 
                         <div class="item-folio__thumb">
                             <a href="images/portfolio/gallery/g-liberty.jpg" class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/liberty.jpg" srcset="images/portfolio/liberty.jpg 1x, images/portfolio/liberty@2x.jpg 2x"
-                                    alt="">
+                                <img src="images/portfolio/liberty.jpg"
+                                    srcset="images/portfolio/liberty.jpg 1x, images/portfolio/liberty@2x.jpg 2x" alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
                         </div>
@@ -481,8 +499,10 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-minimalismo.jpg" class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/minimalismo.jpg" srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo@2x.jpg 2x"
+                            <a href="images/portfolio/gallery/g-minimalismo.jpg" class="thumb-link"
+                                data-size="1050x700">
+                                <img src="images/portfolio/minimalismo.jpg"
+                                    srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo@2x.jpg 2x"
                                     alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
@@ -514,7 +534,8 @@
 
                         <div class="item-folio__thumb">
                             <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/shutterbug.jpg" srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x"
+                                <img src="images/portfolio/shutterbug.jpg"
+                                    srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x"
                                     alt="">
                                 <span class="shadow-overlay"></span>
                             </a>
@@ -542,8 +563,8 @@
                 </div>
 
 
-                </div>
-            </div> 
+            </div>
+        </div>
 
     </section> <!-- / 포트폴리오 -->
 
@@ -575,11 +596,11 @@
                 </div>
 
                 <div class="testimonials__slide">
-                    <img src="images/interested/RX.png" alt="Author image" class="testimonials__avatar">
-                    <p>RxJS</p>
+                    <img src="images/interested/react.png" alt="Author image" class="testimonials__avatar">
+                    <p>React</p>
                     <div class="testimonials__author h06">
-                        개발단계에서는 잘 모른다. 하지만 유지 보수를 하게 된다면 커플링이 심해진 자신의 소스를 보게 된다.<br />
-                        손착욱 저자의 RxJS퀵스타트를 읽고 꼭 활용해봐야 겠다는 생각을 가졌다.
+                        개발단계에서는 잘 모르지만 현재 프론트엔드 개발에서 많이 사용하고 있기에 반드시 공부 하자<br />
+                        리액트를 다루는 기술 책을 읽고 꼭 활용해봐야 겠다는 생각을 가졌다.
                     </div>
                 </div>
 
@@ -609,7 +630,7 @@
                 <h2 class="h01">새로운 환경과 기술의 변화는 두렵지 않습니다.</h2>
 
                 <p class="lead">
-                    웹 개발뿐만이 아닌 프로그램과 관련된 일이라면 무엇이든 즐겁습니다. <br>
+                    웹 개발뿐만이 아닌 프로그램과 관련된 일이라면 환영합니다. <br>
                     개발자로 앞으로 끝없는 성장을 해 나갈 것입니다. 많은 관심 부탁드립니다!
                 </p>
 
@@ -629,11 +650,7 @@
         <div class="row narrow section-intro">
             <div class="col-full">
                 <h3>Contact</h3>
-                <!-- <h1>Say Hello.</h1>
-
-                <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure
-                    esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut
-                    laborum non est in officia.</p> -->
+                <!-- 내용 작성 -->
             </div>
         </div>
 
@@ -643,20 +660,20 @@
                     <fieldset>
 
                         <div class="form-field">
-                            <input name="contactName" type="text" id="contactName" placeholder="Name" value=""
+                            <input name="contactName" type="text" id="contactName" placeholder="보내시는분 성함" value=""
                                 minlength="2" required="" aria-required="true" class="full-width">
                         </div>
                         <div class="form-field">
-                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
+                            <input name="contactEmail" type="email" id="contactEmail" placeholder="보내시는분 메일주소" value=""
                                 required="" aria-required="true" class="full-width">
                         </div>
                         <div class="form-field">
-                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""
+                            <input name="contactSubject" type="text" id="contactSubject" placeholder="제목" value=""
                                 class="full-width">
                         </div>
                         <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
-                                required="" aria-required="true" class="full-width"></textarea>
+                            <textarea name="contactMessage" id="contactMessage" placeholder="메시지" rows="10"
+                                cols="50" required="" aria-required="true" class="full-width"></textarea>
                         </div>
                         <div class="form-field">
                             <button class="full-width btn--primary">Submit</button>
@@ -687,18 +704,18 @@
             <div class="col-four tab-full contact__infos">
                 <h4 class="h06">Phone</h4>
                 <p>
-                    Phone: (+82) 10 6344 9746
+                    Phone: (+82) 10 2372 0531
                 </p>
 
                 <h4 class="h06">Email</h4>
                 <p>
-                    esmoney9385@gmail.com
+                    kjo1333@gmail.com
                 </p>
 
                 <h4 class="h06">Address</h4>
                 <p>
-                    서울 특별시 성동구 <br>
-                    행당동 행당로 79
+                    서울 특별시 광진구 <br>
+                    능동로25길 54-13(군자동)
                 </p>
             </div>
 
@@ -714,30 +731,15 @@
             <div class="col-full">
 
                 <div class="footer-logo">
-                    <a class="footer-site-logo" href="#0">SH</a>
+                    <a class="footer-site-logo" href="#0">JO</a>
                 </div>
 
                 <ul class="footer-social">
-                    <!-- <li><a href="#0">
-                            <i class="im im-facebook" aria-hidden="true"></i>
-                            <span>Facebook</span>
-                        </a></li>
-                    <li><a href="#0">
-                            <i class="im im-twitter" aria-hidden="true"></i>
-                            <span>Twitter</span>
-                        </a></li>
-                    <li><a href="#0">
-                            <i class="im im-instagram" aria-hidden="true"></i>
-                            <span>Instagram</span>
-                        </a></li>
-                    <li><a href="#0">
-                            <i class="im im-behance" aria-hidden="true"></i>
-                            <span>Behance</span>
-                        </a></li> -->
-                    <li><a href="https://github.com/esmoney">
+                    <li><a href="https://github.com/JinOhKwon">
                             <i class="im im-github" aria-hidden="true"></i>
                             <span>github</span>
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
 
             </div>
@@ -747,12 +749,13 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© Copyright Hola 2017</span>
+                    <span>© Copyright Hola 2020</span>
                     <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>
                 </div>
 
                 <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up"
+                            aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -776,9 +779,11 @@
 
             <div class="pswp__ui pswp__ui--hidden">
                 <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button> <button
+                        class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
+                        class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
                     <div class="pswp__preloader">
                         <div class="pswp__preloader__icn">
                             <div class="pswp__preloader__cut">
