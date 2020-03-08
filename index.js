@@ -1,6 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
+var port = process.env.PORT || 8080;
 
 /**
  * 서버 생성
@@ -8,8 +9,6 @@ var url = require('url');
 http.createServer((request, response) => {
     // URL 뒤에 있는 디렉토리/파일이름 파싱
     var pathname = url.parse(request.url).pathname;
-
-    console.log("Request for " + pathname + " received.");
 
     // 파일 이름이 비어있다면 index.html 로 설정
     if (pathname == "/") {
